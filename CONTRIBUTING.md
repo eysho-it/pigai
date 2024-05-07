@@ -36,7 +36,7 @@ In the settings section, add configuration like this:
 ### Node-Llama-CPP Settings
 
 Check out the configuration options in
-here [Node-Llama-CPP](https://withcatai.github.io/node-llama-cpp/classes/LlamaModel.html#constructor)
+here [Node-Llama-CPP](https://withpigai.github.io/node-llama-cpp/classes/LlamaModel.html#constructor)
 
 ## <a name="commit"></a> Commit Message Guidelines
 

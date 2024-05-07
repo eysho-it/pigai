@@ -12,7 +12,7 @@ async function checkForUpdate() {
 
     console.log(`\n${chalk.green('New version available!')}, some models may not work in older versions`);
     console.log(`Current version: ${chalk.yellowBright(packageJSON.version)}, latest: ${chalk.greenBright(latestVersion)}`);
-    console.log(`Run "${chalk.cyan(`catai update`)}" to update`);
+    console.log(`Run "${chalk.cyan(`pigai update`)}" to update`);
 }
 
 export async function tryCheckForUpdate() {

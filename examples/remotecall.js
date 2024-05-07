@@ -1,13 +1,13 @@
-import { RemoteCatAI } from "catai";
+import { Remotepigai } from "pigai";
 
-const catai = new RemoteCatAI("ws://localhost:3000");
+const pigai = new Remotepigai("ws://localhost:3000");
 
-catai.on("open", async () => {
+pigai.on("open", async () => {
   console.log("Connected");
-  const response = await catai.prompt("Write me 100 words story", (token) => {
+  const response = await pigai.prompt("Write me 100 words story", (token) => {
     process.stdout.write(token);
   });
 
   console.log(`Total text length: ${response.length}`);
-  catai.close();
+  pigai.close();
 });

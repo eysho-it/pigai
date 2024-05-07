@@ -1,12 +1,12 @@
 {
-  "name": "catai",
+  "name": "pigai",
   "version": "1.0.0",
   "description": "Chat UI and Local API for the Llama models",
   "main": "dist/index.js",
   "type": "module",
   "types": "./dist/index.d.ts",
   "bin": {
-    "catai": "./dist/cli/cli.js"
+    "pigai": "./dist/cli/cli.js"
   },
   "files": [
     "www/",
@@ -41,7 +41,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/withcatai/catai.git"
+    "url": "git+https://github.com/withpigai/pigai.git"
   },
   "keywords": [
     "llama",
@@ -55,14 +55,14 @@
     "self-hosted",
     "node-llama-cpp",
     "local",
-    "catai"
+    "pigai"
   ],
   "author": "Ido S.",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/withcatai/catai/issues"
+    "url": "https://github.com/withpigai/pigai/issues"
   },
-  "homepage": "https://github.com/withcatai/catai#readme",
+  "homepage": "https://github.com/withpigai/pigai#readme",
   "devDependencies": {
     "@types/body-parser": "^1.19.2",
     "@types/cli-progress": "^3.11.0",

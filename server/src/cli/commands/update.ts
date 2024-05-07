@@ -6,11 +6,11 @@ export const updateCommand = new Command('update');
 
 updateCommand.description('Update server to the latest version')
     .action(async () => {
-        const spinner = ora('Updating CatAI');
+        const spinner = ora('Updating pigai');
         spinner.start();
 
-        await $`npm i -g catai@latest`;
+        await $`npm i -g pigai@latest`;
 
-        const newVersion = (await $`catai --version`).stdout.trim();
-        spinner.succeed('CatAI updated: ' + newVersion);
+        const newVersion = (await $`pigai --version`).stdout.trim();
+        spinner.succeed('pigai updated: ' + newVersion);
     });

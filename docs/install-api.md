@@ -1,9 +1,9 @@
-# CatAI Install API
+# pigai Install API
 
 You can install models on the fly using the `FetchModels` class.
 
 ```ts
-import {FetchModels} from 'catai';
+import {FetchModels} from 'pigai';
 
 const allModels = await FetchModels.fetchModels();
 const firstModel = Object.keys(allModels)[0];
@@ -25,25 +25,25 @@ After the download is finished, this model will be the active model.
 
 ## Configuration
 
-You can change the active model by changing the `CatAIDB`
+You can change the active model by changing the `pigaiDB`
 
 ```ts
-import {CatAIDB} from 'catai';
+import {pigaiDB} from 'pigai';
 
-CatAIDB.db.activeModel = Object.keys(CatAIDB.db.models)[0];
+pigaiDB.db.activeModel = Object.keys(pigaiDB.db.models)[0];
 
-await CatAIDB.saveDB();
+await pigaiDB.saveDB();
 ```
 
-You also can change the model settings by changing the `CatAIDB`
+You also can change the model settings by changing the `pigaiDB`
 
 ```ts
-import {CatAIDB} from 'catai';
+import {pigaiDB} from 'pigai';
 
-const selectedModel = CatAIDB.db.models[CatAIDB.db.activeModel];
+const selectedModel = pigaiDB.db.models[pigaiDB.db.activeModel];
 selectedModel.settings.context = 4096;
 
-await CatAIDB.saveDB();
+await pigaiDB.saveDB();
 ```
 
 For extra information about the configuration, please read the [configuration guide](./configuration.md)

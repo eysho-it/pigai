@@ -40,7 +40,7 @@ installCommand.description('Install any GGUF model')
 
         console.log();
         console.log(`Model ${AppDb.db.activeModel} set to use`);
-        console.log('Run `catai up` to start the server');
+        console.log('Run `pigai up` to start the server');
         process.exit(0);
     });
 

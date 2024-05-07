@@ -2,8 +2,8 @@ import 'zx/globals';
 import {JSDOM} from 'jsdom';
 import prompts from 'prompts';
 
-let {stdout: catAIVersion} = await $`npm -g info catai version`;
-catAIVersion = catAIVersion.trim();
+let {stdout: pigaiVersion} = await $`npm -g info pigai version`;
+pigaiVersion = pigaiVersion.trim();
 
 const modelsJSONPath = path.join(__dirname, '..', '..', 'models.json');
 const models = await fs.readJSON(modelsJSONPath, 'utf-8');
@@ -183,7 +183,7 @@ async function main() {
         modelInfo.download.files.model = file;
         modelInfo.version += 0.1;
         modelInfo.hardwareCompatibility = calculateCompatibility(file);
-        modelInfo.compatibleCatAIVersionRange = [catAIVersion];
+        modelInfo.compatiblepigaiVersionRange = [pigaiVersion];
         console.log(`Model ${userLabel} updated`);
         await saveModel();
         return;
@@ -199,7 +199,7 @@ async function main() {
             "branch": branch,
         },
         "hardwareCompatibility": calculateCompatibility(file),
-        "compatibleCatAIVersionRange": [catAIVersion],
+        "compatiblepigaiVersionRange": [pigaiVersion],
         "settings": {
             "bind": "node-llama-cpp-v2"
         },

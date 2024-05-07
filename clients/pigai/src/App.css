@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #app, main {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-app {
+    flex-grow: 1;
+}

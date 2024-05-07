@@ -6,7 +6,7 @@ The configuration mostly depends on the model binding, for most cases is `llama.
 
 You can config the model by the following steps:
 
-1. Click on the settings button on the CatAI chat WebUI:
+1. Click on the settings button on the pigai chat WebUI:
 
    ![Settings Button](./configuration/settings-button.png)
 
@@ -16,9 +16,9 @@ You can config the model by the following steps:
    If the model binding is `node-llama-cpp` or `node-llama-cpp-v2`, You can find the configuration
    here:
 
-   [LlamaContextOptions](https://withcatai.github.io/node-llama-cpp/api/type-aliases/LlamaContextOptions)
+   [LlamaContextOptions](https://withpigai.github.io/node-llama-cpp/api/type-aliases/LlamaContextOptions)
 
-   [LLamaChatPromptOptions](https://withcatai.github.io/node-llama-cpp/api/type-aliases/LLamaChatPromptOptions)
+   [LLamaChatPromptOptions](https://withpigai.github.io/node-llama-cpp/api/type-aliases/LLamaChatPromptOptions)
 
    You can edit the [systemPrompt](system-prompt.md) of the chat too.
 

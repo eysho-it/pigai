@@ -1,6 +1,6 @@
-# CatAI API
+# pigai API
 
-CatAI provides multiple APIs to interact with the model.
+pigai provides multiple APIs to interact with the model.
 
 ## Local API
 
@@ -9,11 +9,11 @@ The local API is only available in Node.js.
 Enable you to chat with the model locally on your computer.
 
 ```ts
-import {createChat} from 'catai';
+import {createChat} from 'pigai';
 
 const chat = await createChat();
 
-const response = await catai.prompt('Write me 100 words story', token => {
+const response = await pigai.prompt('Write me 100 words story', token => {
     progress.stdout.write(token);
 });
 
@@ -76,15 +76,15 @@ This API is only available only in Node.js.
 [demo](../examples/remotecall.js)
 
 ```js
-import { RemoteCatAI } from "catai";
+import { Remotepigai } from "pigai";
 
-const catai = new RemoteCatAI("ws://localhost:3000");
+const pigai = new Remotepigai("ws://localhost:3000");
 
-const response = await catai.prompt("Write me 100 words story", (token) => {
+const response = await pigai.prompt("Write me 100 words story", (token) => {
     process.stdout.write(token);
 });
 
 console.log(`Total text length: ${response.length}`);
-catai.close();
+pigai.close();
 
 ```

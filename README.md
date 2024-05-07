@@ -1,14 +1,14 @@
 <div align="center">
-    <img alt="CatAI Logo" src="docs/demo/logo.png" width="360px"/>
-    <h1>CatAI</h1>
+    <img alt="pigai Logo" src="docs/demo/logo.png" width="360px"/>
+    <h1>pigai</h1>
 </div>
 
 <div align="center">
 
-[![Build](https://github.com/withcatai/catai/actions/workflows/release.yml/badge.svg)](https://github.com/withcatai/catai/actions/workflows/build.yml)
-[![License](https://badgen.net/badge/color/MIT/green?label=license)](https://www.npmjs.com/package/catai)
-[![License](https://badgen.net/badge/color/TypeScript/blue?label=types)](https://www.npmjs.com/package/catai)
-[![Version](https://badgen.net/npm/v/catai)](https://www.npmjs.com/package/catai)
+[![Build](https://github.com/withpigai/pigai/actions/workflows/release.yml/badge.svg)](https://github.com/withpigai/pigai/actions/workflows/build.yml)
+[![License](https://badgen.net/badge/color/MIT/green?label=license)](https://www.npmjs.com/package/pigai)
+[![License](https://badgen.net/badge/color/TypeScript/blue?label=types)](https://www.npmjs.com/package/pigai)
+[![Version](https://badgen.net/npm/v/pigai)](https://www.npmjs.com/package/pigai)
 
 </div>
 <br />
@@ -18,20 +18,20 @@ Run GGUF models on your computer with a chat ui.
 > Your own AI assistant runs locally on your computer.
 
 Inspired
-by [Node-Llama-Cpp](https://github.com/withcatai/node-llama-cpp), [Llama.cpp](https://github.com/ggerganov/llama.cpp)
+by [Node-Llama-Cpp](https://github.com/withpigai/node-llama-cpp), [Llama.cpp](https://github.com/ggerganov/llama.cpp)
 
 ## Installation & Use
 
 Make sure you have [Node.js](https://nodejs.org/en/) (**download current**) installed.
 
 ```bash
-npm install -g catai
+npm install -g pigai
 
-catai install vicuna-7b-16k-q4_k_s
-catai up
+pigai install vicuna-7b-16k-q4_k_s
+pigai up
 ```
 
-![catai](docs/demo/chat.gif)
+![pigai](docs/demo/chat.gif)
 
 ## Features
 - Auto detect programming language 🧑‍💻
@@ -42,7 +42,7 @@ catai up
 ## CLI
 
 ```
-Usage: catai [options] [command]
+Usage: pigai [options] [command]
 
 Options:
   -V, --version                    output the version number
@@ -82,7 +82,7 @@ Options:
 
 You can use it on Windows, Linux and Mac.
 
-This package uses [node-llama-cpp](https://github.com/withcatai/node-llama-cpp) which supports the following platforms:
+This package uses [node-llama-cpp](https://github.com/withpigai/node-llama-cpp) which supports the following platforms:
 
 - darwin-x64
 - darwin-arm64
@@ -102,7 +102,7 @@ According to [a llama.cpp discussion thread](https://github.com/ggerganov/llama.
 - 30B => ~16 GB
 
 ### Good to know
-- All download data will be downloaded at `~/catai` folder by default.
+- All download data will be downloaded at `~/pigai` folder by default.
 - The download is multi-threaded, so it may use a lot of bandwidth, but it will download faster!
 
 ## Web API
@@ -123,13 +123,13 @@ const response = await fetch('http://127.0.0.1:3000/api/chat/prompt', {
 const data = await response.text();
 ```
 
-For more information, please read the [API guide](https://github.com/withcatai/catai/blob/main/docs/api.md)
+For more information, please read the [API guide](https://github.com/withpigai/pigai/blob/main/docs/api.md)
 
 ## Configuration
 
 You can edit the configuration via the web ui.
 
-More information [here](https://github.com/withcatai/catai/blob/main/docs/configuration.md)
+More information [here](https://github.com/withpigai/pigai/blob/main/docs/configuration.md)
 
 ## Contributing
 
