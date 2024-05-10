@@ -1,11 +1,11 @@
 <div align="center">
-    <img alt="pigai Logo" src="docs/demo/logo.png" width="360px"/>
-    <h1>pigai</h1>
+    <img alt="PigAI Logo" src="docs/demo/logo.png" width="360px"/>
+    <h1>PigAI</h1>
 </div>
 
 <div align="center">
 
-[![Build](https://github.com/withpigai/pigai/actions/workflows/release.yml/badge.svg)](https://github.com/withpigai/pigai/actions/workflows/build.yml)
+[![Build](https://github.com/eysho-it/pigai/actions/workflows/release.yml/badge.svg)](https://github.com/eysho-it/pigai/actions/workflows/build.yml)
 [![License](https://badgen.net/badge/color/MIT/green?label=license)](https://www.npmjs.com/package/pigai)
 [![License](https://badgen.net/badge/color/TypeScript/blue?label=types)](https://www.npmjs.com/package/pigai)
 [![Version](https://badgen.net/npm/v/pigai)](https://www.npmjs.com/package/pigai)
@@ -18,7 +18,7 @@ Run GGUF models on your computer with a chat ui.
 > Your own AI assistant runs locally on your computer.
 
 Inspired
-by [Node-Llama-Cpp](https://github.com/withpigai/node-llama-cpp), [Llama.cpp](https://github.com/ggerganov/llama.cpp)
+by [Node-Llama-Cpp](https://github.com/eysho-it/node-llama-cpp), [Llama.cpp](https://github.com/ggerganov/llama.cpp)
 
 ## Installation & Use
 
@@ -82,7 +82,7 @@ Options:
 
 You can use it on Windows, Linux and Mac.
 
-This package uses [node-llama-cpp](https://github.com/withpigai/node-llama-cpp) which supports the following platforms:
+This package uses [node-llama-cpp](https://github.com/eysho-it/node-llama-cpp) which supports the following platforms:
 
 - darwin-x64
 - darwin-arm64
@@ -116,20 +116,20 @@ const response = await fetch('http://127.0.0.1:3000/api/chat/prompt', {
         prompt: 'Write me 100 words story'
     }),
     headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'applipigion/json'
     }
 });
 
 const data = await response.text();
 ```
 
-For more information, please read the [API guide](https://github.com/withpigai/pigai/blob/main/docs/api.md)
+For more information, please read the [API guide](https://github.com/eysho-it/pigai/blob/main/docs/api.md)
 
 ## Configuration
 
 You can edit the configuration via the web ui.
 
-More information [here](https://github.com/withpigai/pigai/blob/main/docs/configuration.md)
+More information [here](https://github.com/eysho-it/pigai/blob/main/docs/configuration.md)
 
 ## Contributing
 
