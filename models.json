@@ -13,7 +13,7 @@
       "cpuCors": 3,
       "compressions": "q3_k_s"
     },
-    "compatibleCatAIVersionRange": [
+    "compatiblePigAIVersionRange": [
       "2.0.9"
     ],
     "settings": {
@@ -35,7 +35,7 @@
       "cpuCors": 3,
       "compressions": "q3_k_s"
     },
-    "compatibleCatAIVersionRange": [
+    "compatiblePigAIVersionRange": [
       "2.0.9"
     ],
     "settings": {
@@ -57,7 +57,7 @@
       "cpuCors": 2,
       "compressions": "q3_k_s"
     },
-    "compatibleCatAIVersionRange": [
+    "compatiblePigAIVersionRange": [
       "2.0.13"
     ],
     "settings": {
@@ -79,7 +79,7 @@
       "cpuCors": 4,
       "compressions": "q4_k_s"
     },
-    "compatibleCatAIVersionRange": [
+    "compatiblePigAIVersionRange": [
       "2.0.13"
     ],
     "settings": {
@@ -101,7 +101,7 @@
       "cpuCors": 4,
       "compressions": "q4_k_m"
     },
-    "compatibleCatAIVersionRange": [
+    "compatiblePigAIVersionRange": [
       "2.0.13"
     ],
     "settings": {
@@ -123,7 +123,7 @@
       "cpuCors": 8,
       "compressions": "q3_k_s"
     },
-    "compatibleCatAIVersionRange": [
+    "compatiblePigAIVersionRange": [
       "2.0.13"
     ],
     "settings": {
@@ -145,7 +145,7 @@
       "cpuCors": 2,
       "compressions": "q4_k_s"
     },
-    "compatibleCatAIVersionRange": [
+    "compatiblePigAIVersionRange": [
       "2.0.14"
     ],
     "settings": {
@@ -168,7 +168,7 @@
       "cpuCors": 4,
       "compressions": "q4_k_s"
     },
-    "compatibleCatAIVersionRange": [
+    "compatiblePigAIVersionRange": [
       "2.0.14"
     ],
     "settings": {
@@ -191,7 +191,7 @@
       "cpuCors": 4,
       "compressions": "q4_k_s"
     },
-    "compatibleCatAIVersionRange": [
+    "compatiblePigAIVersionRange": [
       "2.0.14"
     ],
     "settings": {
@@ -213,7 +213,7 @@
       "cpuCors": 20,
       "compressions": "q4_k_s"
     },
-    "compatibleCatAIVersionRange": [
+    "compatiblePigAIVersionRange": [
       "2.0.14"
     ],
     "settings": {
@@ -235,7 +235,7 @@
       "cpuCors": 10,
       "compressions": "q4_k_s"
     },
-    "compatibleCatAIVersionRange": [
+    "compatiblePigAIVersionRange": [
       "2.0.14"
     ],
     "settings": {
@@ -257,7 +257,7 @@
       "cpuCors": 4,
       "compressions": "q4_k_s"
     },
-    "compatibleCatAIVersionRange": [
+    "compatiblePigAIVersionRange": [
       "2.0.14"
     ],
     "settings": {
@@ -279,7 +279,7 @@
       "cpuCors": 2,
       "compressions": "q4_k_s"
     },
-    "compatibleCatAIVersionRange": [
+    "compatiblePigAIVersionRange": [
       "2.0.14"
     ],
     "settings": {
@@ -301,7 +301,7 @@
       "cpuCors": 10,
       "compressions": "q4_k_s"
     },
-    "compatibleCatAIVersionRange": [
+    "compatiblePigAIVersionRange": [
       "2.0.14"
     ],
     "settings": {
@@ -323,7 +323,7 @@
       "cpuCors": 10,
       "compressions": "q4_k_s"
     },
-    "compatibleCatAIVersionRange": [
+    "compatiblePigAIVersionRange": [
       "2.0.14"
     ],
     "settings": {
@@ -345,7 +345,7 @@
       "cpuCors": 4,
       "compressions": "q4_k_s"
     },
-    "compatibleCatAIVersionRange": [
+    "compatiblePigAIVersionRange": [
       "2.0.14"
     ],
     "settings": {
@@ -367,7 +367,7 @@
       "cpuCors": 2,
       "compressions": "q4_k_s"
     },
-    "compatibleCatAIVersionRange": [
+    "compatiblePigAIVersionRange": [
       "2.0.14"
     ],
     "settings": {
@@ -389,7 +389,7 @@
       "cpuCors": 20,
       "compressions": "q4_k_s"
     },
-    "compatibleCatAIVersionRange": [
+    "compatiblePigAIVersionRange": [
       "2.0.14"
     ],
     "settings": {
@@ -411,7 +411,7 @@
       "cpuCors": 10,
       "compressions": "q4_k_s"
     },
-    "compatibleCatAIVersionRange": [
+    "compatiblePigAIVersionRange": [
       "2.0.14"
     ],
     "settings": {
@@ -433,7 +433,7 @@
       "cpuCors": 4,
       "compressions": "q4_k_s"
     },
-    "compatibleCatAIVersionRange": [
+    "compatiblePigAIVersionRange": [
       "2.0.14"
     ],
     "settings": {
@@ -456,7 +456,7 @@
       "cpuCors": 2,
       "compressions": "q4_0"
     },
-    "compatibleCatAIVersionRange": [
+    "compatiblePigAIVersionRange": [
       "3.0.2"
     ],
     "settings": {
