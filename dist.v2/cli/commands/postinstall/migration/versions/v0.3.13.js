@@ -1,0 +1,33 @@
+import path from 'path';
+import ENV_CONFIG from '../../../../../storage/config.js';
+import fs from 'fs-extra';
+import AppDb from '../../../../../storage/app-db.js';
+const EXECUTABLE_DIR = path.join(ENV_CONFIG.PIGAI_DIR, 'executable');
+const MIN_SIZE_BYTES = 10485760 * 2; // 20mb
+async function migration() {
+    const models = await fs.readdir(ENV_CONFIG.MODEL_DIR);
+    for (const model of models) {
+        const modelPath = path.join(ENV_CONFIG.MODEL_DIR, model);
+        const stat = await fs.stat(modelPath);
+        if (stat.size < MIN_SIZE_BYTES)
+            continue;
+        AppDb.db.models[model] = {
+            downloadedFiles: {
+                model: modelPath,
+            },
+            bindClass: 'node-llama',
+            createDate: stat.birthtime.getTime(),
+            compatiblePigAIVersionRange: ['0.3.0', '0.3.13'],
+            version: 0,
+            settings: {},
+            defaultSettings: {},
+        };
+    }
+    await AppDb.saveDB();
+    await fs.remove(EXECUTABLE_DIR);
+}
+export default {
+    version: '0.3.13',
+    migration
+};
+//# sourceMappingURL=v0.3.13.js.map
