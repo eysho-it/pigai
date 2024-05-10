@@ -1,1 +1,0 @@
-export default function createChatWrapper(_package: typeof import('node-llama-cpp'), wrapper?: string | null): import("node-llama-cpp").LlamaChatPromptWrapper | import("node-llama-cpp").ChatMLPromptWrapper | import("node-llama-cpp").FalconChatPromptWrapper | import("node-llama-cpp").GeneralChatPromptWrapper;

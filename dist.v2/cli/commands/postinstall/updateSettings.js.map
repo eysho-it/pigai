@@ -1,1 +1,0 @@
-{"version":3,"file":"updateSettings.js","sourceRoot":"","sources":["../../../../src/cli/commands/postinstall/updateSettings.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,MAAM,4BAA4B,CAAC;AAC/C,OAAO,EAAC,WAAW,EAAC,MAAM,4BAA4B,CAAC;AAEvD,MAAM,CAAC,OAAO,CAAC,KAAK,UAAU,4BAA4B;IACtD,KAAK,CAAC,EAAE,CAAC,qBAAqB,GAAG,WAAW,CAAC,OAAO,CAAC;IACrD,MAAM,KAAK,CAAC,MAAM,EAAE,CAAC;AACzB,CAAC"}
