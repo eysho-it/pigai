@@ -12,6 +12,6 @@ uninstallCommand.description('Uninstall server and delete all models')
         spinner.start();
 
         await $`npm uninstall -g pigai`;
-        await fs.remove(ENV_CONFIG.pigai_DIR!);
+        await fs.remove(ENV_CONFIG.PIGAI_DIR!);
         spinner.succeed('pigai uninstalled');
     });
