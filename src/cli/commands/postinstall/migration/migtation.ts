@@ -8,14 +8,14 @@ import appDb from '../../../../storage/app-db.js';
 const MIGRATIONS = [v0313, v209];
 
 export async function runMigrations() {
-    const fromVersion = appDb.db.installedCatAIVersion || '0.0.0';
+    const fromVersion = appDb.db.installedPigAIVersion || '0.0.0';
     const toVersion = packageJSON.version;
 
     for (const migration of MIGRATIONS) {
         if (semver.lte(toVersion, migration.version)) continue;
 
         if (semver.gte(migration.version, fromVersion)) {
-            console.log(`CatAI Migrated to v${migration.version}`);
+            console.log(`PigAI Migrated to v${migration.version}`);
             await migration.migration();
         }
     }
