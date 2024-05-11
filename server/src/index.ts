@@ -1,5 +1,6 @@
 import RemotePigAI from './server/remote/remote-pigai.js';
 import FetchModels from './manage-models/about-models/fetch-models.js';
+import getModelPath from "./manage-models/bind-class/bind-class.js";
 import createChat, {getModelPath} from './manage-models/bind-class/bind-class.js';
 import PigAIDB from './storage/app-db.js';
 import ENV_CONFIG from './storage/config.js';
