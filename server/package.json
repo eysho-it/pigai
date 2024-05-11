@@ -1,6 +1,6 @@
 {
   "name": "pigai",
-  "version": "3.2.1",
+  "version": "8.0.0",
   "description": "Chat UI and Local API for the Llama models",
   "main": "dist/index.js",
   "type": "module",
