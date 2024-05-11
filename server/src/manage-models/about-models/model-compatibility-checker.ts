@@ -28,8 +28,8 @@ class ModelCompatibilityChecker {
     private static readonly totalMemoryInGB: number = os.totalmem() / GB_IN_BYTES;
     private static readonly availableMemory: number = os.freemem() / GB_IN_BYTES;
 
-    public static checkModelCompatibility({hardwareCompatibility, compatibleCatAIVersionRange}: ModelSettings<any>): Compatibility {
-        if (!compatibleCatAIVersionRange?.[0]) {
+    public static checkModelCompatibility({hardwareCompatibility, compatiblePigAIVersionRange}: ModelSettings<any>): Compatibility {
+        if (!compatiblePigAIVersionRange?.[0]) {
             return {
                 compatibility: '?',
                 note: 'Model unknown'
@@ -37,17 +37,17 @@ class ModelCompatibilityChecker {
         }
 
 
-        if (semver.gt(compatibleCatAIVersionRange[0], packageJSON.version)) {
+        if (semver.gt(compatiblePigAIVersionRange[0], packageJSON.version)) {
             return {
                 compatibility: '❌',
-                note: `requires at least CatAI version ${chalk.cyan(compatibleCatAIVersionRange[0])}`
+                note: `requires at least PigAI version ${chalk.cyan(compatiblePigAIVersionRange[0])}`
             };
         }
 
-        if (compatibleCatAIVersionRange[1] && semver.lt(compatibleCatAIVersionRange[1], packageJSON.version)) {
+        if (compatiblePigAIVersionRange[1] && semver.lt(compatiblePigAIVersionRange[1], packageJSON.version)) {
             return {
                 compatibility: '❌',
-                note: `requires CatAI version ${chalk.cyan(compatibleCatAIVersionRange[1])} or lower`
+                note: `requires PigAI version ${chalk.cyan(compatiblePigAIVersionRange[1])} or lower`
             };
         }
 

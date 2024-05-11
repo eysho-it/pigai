@@ -21,7 +21,7 @@ async function migration() {
             },
             bindClass: 'node-llama',
             createDate: stat.birthtime.getTime(),
-            compatibleCatAIVersionRange: ['0.3.0', '0.3.13'],
+            compatiblePigAIVersionRange: ['0.3.0', '0.3.13'],
             version: 0,
             settings: {},
             defaultSettings: {},
