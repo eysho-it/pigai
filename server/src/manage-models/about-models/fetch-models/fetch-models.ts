@@ -45,7 +45,7 @@ export default class FetchModels {
      *
      * await install.startDownload();
      *
-     * @example - Install form PigAI model index
+     * @example - Install form CatAI model index
      * const models = await FetchModels.fetchModels();
      * const firstModel = Object.keys(models)[0];
      *

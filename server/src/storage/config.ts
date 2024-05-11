@@ -8,8 +8,8 @@ const __dirname = fileURLToPath(new URL('./', import.meta.url));
 export const packageJSON = await fs.readJSON(path.join(__dirname, '..', '..', 'package.json'));
 
 /**
- * PIGAI config, that can be set by env variables
- * @property {string} PIGAI_DIR - The directory to store models and other data.
+ * PIGai config, that can be set by env variables
+ * @property {string} pigai_DIR - The directory to store models and other data.
  *
  * env: PIGAI_DIR
  * @property {boolean} PRODUCTION - Whether to run in production mode
@@ -57,7 +57,7 @@ export type Config = {
 const DEFAULT_CONFIG: Config = {
     PIGAI_DIR: path.join(os.homedir(), "pigai"),
     PRODUCTION: false,
-    SELECTED_UI: "pigai",
+    SELECTED_UI: "PIGAI",
     PORT: 3000,
     OPEN_IN_BROWSER: true,
     ADMIN_USE: true,

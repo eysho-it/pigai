@@ -1,0 +1,13 @@
+
+
+echo "Renaming all files and folders to the new project name..."
+find . -depth -exec bash -c 'for file in "$1"; do mv "$file" "$(echo $file | sed s/kobold/bkg/)" ; done' _ {} \;
+echo "Renaming process completed."
+
+echo "Updating project name inside files..."
+find . -type f -exec sed -i 's/kobold/bkg/g' {} +
+echo "Project name update inside files completed."
+
+echo "Logging renamed files to a log file..."
+find . -type f | grep "bkg" > renamed_files.log
+echo "Renamed files list can be found in renamed_files.log"
