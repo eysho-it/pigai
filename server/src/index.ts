@@ -10,5 +10,5 @@ export {
     FetchModels,
     createChat,
     pigaiDB,
-    ENV_CONFIG as pigai_ENV_CONFIG,
+    ENV_CONFIG as PIGAI_ENV_CONFIG,
 };

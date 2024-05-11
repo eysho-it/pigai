@@ -11,7 +11,7 @@ removeCommand.alias('rm')
     .option('-a --all', 'Remove all models')
     .action(async (models = [], {all}) => {
         if(all){
-            await fs.remove(ENV_CONFIG.CATAI_DIR!);
+            await fs.remove(ENV_CONFIG.PIGAI_DIR!);
             console.log('All models removed');
             return;
         }

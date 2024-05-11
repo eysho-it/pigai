@@ -12,7 +12,7 @@ export type ModelSettings<T> = {
         [fileId: string]: string
     },
     version?: number;
-    compatibleCatAIVersionRange?: [string, string?],
+    compatiblePigAIVersionRange?: [string, string?],
     hardwareCompatibility?: {
         "ramGB": number,
         "cpuCors": number,
@@ -25,7 +25,7 @@ export type ModelSettings<T> = {
 
 export type DBStore = {
     activeModel?: string;
-    installedCatAIVersion?: string;
+    installedPigAIVersion?: string;
     models: {
         [modelName: string]: ModelSettings<{
             [settingName: string]: any;
@@ -34,8 +34,8 @@ export type DBStore = {
 }
 
 
-export class CatAIJsonDB {
-    private readonly DB_PATH = path.join(ENV_CONFIG.CATAI_DIR!, 'app-db.json');
+export class PigAIJsonDB {
+    private readonly DB_PATH = path.join(ENV_CONFIG.PIGAI_DIR!, 'app-db.json');
     public db: DBStore;
 
     constructor() {
@@ -55,7 +55,7 @@ export class CatAIJsonDB {
     }
 }
 
-const appDB = new CatAIJsonDB();
+const appDB = new PigAIJsonDB();
 await appDB.loadDB();
 
 export default appDB;

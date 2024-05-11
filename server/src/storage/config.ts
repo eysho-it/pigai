@@ -8,41 +8,41 @@ const __dirname = fileURLToPath(new URL('./', import.meta.url));
 export const packageJSON = await fs.readJSON(path.join(__dirname, '..', '..', 'package.json'));
 
 /**
- * pigai config, that can be set by env variables
+ * PIGai config, that can be set by env variables
  * @property {string} pigai_DIR - The directory to store models and other data.
  *
- * env: pigai_DIR
+ * env: PIGAI_DIR
  * @property {boolean} PRODUCTION - Whether to run in production mode
  *
- * env: pigai_PRODUCTION
+ * env: PIGAI_PRODUCTION
  * @property {string} SELECTED_UI - The web ui to use
  *
- * env: pigai_SELECTED_UI
+ * env: PIGAI_SELECTED_UI
  * @property {number} PORT - The port to use for the server
  *
- * env: pigai_PORT
+ * env: PIGAI_PORT
  * @property {boolean} OPEN_IN_BROWSER - Whether to open the website in the browser
  *
- * env: pigai_OPEN_IN_BROWSER
+ * env: PIGAI_OPEN_IN_BROWSER
  * @property {boolean} ADMIN_USE - Whether to use admin features
  *
- * env: pigai_ADMIN_USE
+ * env: PIGAI_ADMIN_USE
  * @property {string} MODEL_INDEX - The url to the model index, currently fetch from pigai repo
  *
- * env: pigai_MODEL_INDEX
+ * env: PIGAI_MODEL_INDEX
  * @property {string} MODEL_DIR - The directory to store models
  *
- * env: pigai_DIR
+ * env: PIGAI_DIR
  * @property {boolean} DEBUG_MODE - Whether to run in debug mode
  *
- * env: pigai_DEBUG
+ * env: PIGAI_DEBUG
  * @property {number} SIMULTANEOUSLY_EXECUTING - The number of models that can be executed simultaneously
  *
- * env: pigai_SIMULTANEOUSLY_EXECUTING
+ * env: PIGAI_SIMULTANEOUSLY_EXECUTING
  * @interface
  */
 export type Config = {
-    pigai_DIR: string;
+    PIGAI_DIR: string;
     PRODUCTION: boolean;
     SELECTED_UI: string;
     PORT: number;
@@ -55,29 +55,29 @@ export type Config = {
 }
 
 const DEFAULT_CONFIG: Config = {
-    pigai_DIR: path.join(os.homedir(), "pigai"),
+    PIGAI_DIR: path.join(os.homedir(), "pigai"),
     PRODUCTION: false,
-    SELECTED_UI: "pigai",
+    SELECTED_UI: "PIGAI",
     PORT: 3000,
     OPEN_IN_BROWSER: true,
     ADMIN_USE: true,
-    MODEL_INDEX: "https://raw.githubusercontent.com/withpigai/pigai/main/models.json",
+    MODEL_INDEX: "https://raw.githubusercontent.com/eysho-it/pigai/main/models.json",
     DEBUG_MODE: false,
     SIMULTANEOUSLY_EXECUTING: 4
 };
 
 const ENV_CONFIG: Partial<Config> = {
-    pigai_DIR: process.env.pigai_DIR,
-    PRODUCTION: yn(process.env.pigai_PRODUCTION),
-    SELECTED_UI: process.env.pigai_SELECTED_UI,
-    PORT: Number(process.env.pigai_PORT),
-    OPEN_IN_BROWSER: yn(process.env.pigai_OPEN_IN_BROWSER),
-    ADMIN_USE: yn(process.env.pigai_ADMIN_USE),
-    MODEL_INDEX: process.env.pigai_MODEL_INDEX,
-    DEBUG_MODE: yn(process.env.pigai_DEBUG),
-    SIMULTANEOUSLY_EXECUTING: Number(process.env.pigai_SIMULTANEOUSLY_EXECUTING),
+    PIGAI_DIR: process.env.PIGAI_DIR,
+    PRODUCTION: yn(process.env.PIGAI_PRODUCTION),
+    SELECTED_UI: process.env.PIGAI_SELECTED_UI,
+    PORT: Number(process.env.PIGAI_PORT),
+    OPEN_IN_BROWSER: yn(process.env.PIGAI_OPEN_IN_BROWSER),
+    ADMIN_USE: yn(process.env.PIGAI_ADMIN_USE),
+    MODEL_INDEX: process.env.PIGAI_MODEL_INDEX,
+    DEBUG_MODE: yn(process.env.PIGAI_DEBUG),
+    SIMULTANEOUSLY_EXECUTING: Number(process.env.PIGAI_SIMULTANEOUSLY_EXECUTING),
     get MODEL_DIR() {
-        return path.join(ENV_CONFIG.pigai_DIR!, 'models');
+        return path.join(ENV_CONFIG.PIGAI_DIR!, 'models');
     }
 };
 export default ENV_CONFIG;

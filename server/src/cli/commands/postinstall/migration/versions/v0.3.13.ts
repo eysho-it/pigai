@@ -3,7 +3,7 @@ import ENV_CONFIG from '../../../../../storage/config.js';
 import fs from 'fs-extra';
 import AppDb from '../../../../../storage/app-db.js';
 
-const EXECUTABLE_DIR = path.join(ENV_CONFIG.CATAI_DIR!, 'executable');
+const EXECUTABLE_DIR = path.join(ENV_CONFIG.PIGAI_DIR!, 'executable');
 const MIN_SIZE_BYTES = 10485760 * 2; // 20mb
 
 async function migration() {

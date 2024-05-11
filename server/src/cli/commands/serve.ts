@@ -23,8 +23,8 @@ function runServer(ui: string): Promise<number> {
         stdio: 'inherit',
         env: {
             ...process.env,
-            CATAI_SELECTED_UI: ui,
-            CATAI_PRODUCTION: (!ENV_CONFIG.DEBUG_MODE).toString()
+            PIGAI_SELECTED_UI: ui,
+            PIGAI_PRODUCTION: (!ENV_CONFIG.DEBUG_MODE).toString()
         }
     });
 
