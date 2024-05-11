@@ -2,13 +2,13 @@ import WebSocket, { ClientOptions } from 'ws';
 import { ClientRequestArgs } from 'http';
 import { ChatContext } from '../../manage-models/bind-class/chat-context.js';
 
-export default class RemoteCatAI extends ChatContext {
+export default class RemotePigAI extends ChatContext {
     private _ws: WebSocket;
     private _closed = false;
     private _promiseOpen?: Promise<void>;
 
     /**
-     * Connect to remote CatAI server, and use it as a chat context
+     * Connect to remote PigAI server, and use it as a chat context
      * @param url - WebSocket URL
      * @param options - WebSocket options
      */
